@@ -6,8 +6,8 @@ include __DIR__ . '/header.php';
 <header>
     <div class="header-top-bar">
         <div class="container-fluid px-xl-0">
-            <div class="row gx-xl-5 justify-content-center justify-content-md-end align-items-center">
-                <div class="col-12 col-md">
+            <div class="row gx-xl-5 justify-content-center justify-content-lg-end align-items-center">
+                <div class="col-12 col-lg">
                     <div class="logo-wrapper">
                         <a href="./" class="logo">
                             <?= renderImg("logo.png", "logo") ?>
@@ -42,7 +42,7 @@ include __DIR__ . '/header.php';
                         </div>
                     </div>
                 </div>
-                <div class="col col-md-auto px-0 px-md-3">
+                <div class="col col-md-auto px-0 px-md-3 pt-md-4 pt-lg-0">
                     <div class="row gx-0 align-items-center header-buttons">
                         <div class="col-6 col-md-auto">
                             <a href="tel:<?= $phone_number ?>" class="btn btn-primary py-3 px-md-5">
@@ -73,8 +73,8 @@ include __DIR__ . '/header.php';
                 </div>
             </div>
         </div>
-        <?= renderImg("banner.png", "background", "banner-img d-none d-md-block") ?>
-        <?= renderImg("banner-sm.png", "background", "banner-img d-md-none pt-5") ?>
+        <?= renderImg("banner.png", "background", "banner-img d-none d-lg-block") ?>
+        <?= renderImg("banner-sm.png", "background", "banner-img d-lg-none pt-5") ?>
     </div>
 </header>
 
@@ -163,12 +163,12 @@ include __DIR__ . '/header.php';
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-xl-6 px-xxl-5 py-5 py-md-0">
+            <div class="col-12 col-xl-6 px-xxl-5 py-5 py-lg-0">
                 <div class="letter-spacing-n02 fs-8 line-height-1 fw-800">Receive $250 cash for every successful referral that you send our way.</div>
                 <div class="testimonial-wrapper">
                     <div class="testimonial-card">
                         <div class="row align-items-center review-row">
-                            <div class="col-md-6 col-xl-5">
+                            <div class="col-md-5 col-lg-6 col-xl-5">
                                 <div class="row gx-3 align-items-center">
                                     <div class="col-auto"><?= renderImg("user.png", "icons") ?></div>
                                     <div class="col-auto">
@@ -185,7 +185,7 @@ include __DIR__ . '/header.php';
                     </div>
                     <div class="testimonial-card active">
                         <div class="row align-items-center review-row">
-                            <div class="col-md-6 col-xl-5">
+                            <div class="col-md-5 col-lg-6 col-xl-5">
                                 <div class="row gx-3 align-items-center">
                                     <div class="col-auto"><?= renderImg("user.png", "icons") ?></div>
                                     <div class="col-auto">
@@ -202,7 +202,7 @@ include __DIR__ . '/header.php';
                     </div>
                     <div class="testimonial-card">
                         <div class="row align-items-center review-row">
-                            <div class="col-md-6 col-xl-5">
+                            <div class="col-md-5 col-lg-6 col-xl-5">
                                 <div class="row gx-3 align-items-center">
                                     <div class="col-auto"><?= renderImg("user.png", "icons") ?></div>
                                     <div class="col-auto">
@@ -219,7 +219,7 @@ include __DIR__ . '/header.php';
                     </div>
                     <div class="testimonial-card">
                         <div class="row align-items-center review-row">
-                            <div class="col-md-6 col-xl-5">
+                            <div class="col-md-5 col-lg-6 col-xl-5">
                                 <div class="row gx-3 align-items-center">
                                     <div class="col-auto"><?= renderImg("user.png", "icons") ?></div>
                                     <div class="col-auto">
@@ -319,7 +319,7 @@ include __DIR__ . '/header.php';
         <div class="row gx-0 align-items-center">
             <div class="col">
                 <div class="row gx-0 justify-content-end">
-                    <div class="col-md-11 col-xl-10 py-5 p-md-5">
+                    <div class="col-lg-11 col-xl-10 py-5 p-md-5">
                         <div class="fs-4 fw-800 text-dark text-capitalize line-height-1 letter-spacing-n02">At Toned Up Painting, we appreciate every customer.</div>
                         <div class="description fs-12 line-height-2 fw-700 py-4 py-md-5 pe-xxl-6">
                             <p>To show that appreciation, we arrive to appointments on time, listen to your concerns and opinions, and always treat you and your property with respect.</p>
