@@ -265,4 +265,109 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
+<section class="about-us">
+    <div class="container">
+        <div class="fs-4 fw-800 text-white text-center text-capitalize pb-5">Qualified &amp; Considerate Painting Professionals</div>
+        <div class="row justify-content-center gx-xl-4">
+            <div class="col-md-6 col-lg-4">
+                <?= renderImg("about-1.png", "lib", "w-100") ?>
+                <div class="description">
+                    <p>Here at Toned Up Painting, we believe there's nothing more important than customer satisfaction. <strong>And you know who agrees? Our hundreds of loyal customers.</strong></p>
+                    <p>After all, we specialise in residential repainting, which means our clients trust us to work on their most prized possessions: their homes.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <?= renderImg("about-2.png", "lib", "w-100") ?>
+                <div class="description">
+                    <p>The Toned Up team has the utmost care and respect for your biggest investment, and we believe in <strong>doing the job the RIGHT way the FIRST time.</strong></p>
+                    <p>But it's more than just our work that helps us stand out from the crowd, it's our service.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <?= renderImg("about-3.png", "lib", "w-100") ?>
+                <div class="description">
+                    Letting a team of painters into your house requires trust. To help establish that trust, we believe in open communication. <strong>That's why we guarantee that every concern, phone call, and email will be answered in a timely manner by someone who really cares.</strong> No matter the problem, we promise we'll work out a solution.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="our-work">
+    <div class="container-fluid px-xl-0">
+        <div class="row gx-0 align-items-center">
+            <div class="col">
+                <div class="row gx-0 justify-content-end">
+                    <div class="col-11 col-xl-10 p-5">
+                        <div class="fs-4 fw-800 text-dark text-capitalize line-height-1 letter-spacing-n02">At Toned Up Painting, we appreciate every customer.</div>
+                        <div class="description fs-12 line-height-2 fw-700 py-5 pe-xxl-6">
+                            <p>To show that appreciation, we arrive to appointments on time, listen to your concerns and opinions, and always treat you and your property with respect.</p>
+                            <p>And while the quality of our work is always top-notch, we don't mind having a reputation as a customer-centric painting company.</p>
+                        </div>
+                        <a href="#testimonials" class="btn btn-dark text-white fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-4 px-5">See Testiomonials</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto"><?= renderImg("our-work.png", "lib") ?></div>
+        </div>
+    </div>
+</section>
+
+<section class="our-history">
+    <?= renderImg("paint-brush.png", "lib", "paint-brush") ?>
+    <div class="history-1">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-lg-6">
+                    <div class="fs-7 text-quartinary fw-800 letter-spacing-n02 line-height-4 pb-3">A long time ago we made the decision to do one thing, and do it really well.</div>
+                    <div class="text-white fs-12 fw-600 pt-4 pe-xxl-4">Residential repaints can be one of the more challenging projects for a contractor to tackle. It’s easy to nail a great paint job but the challenge comes down to the care factor.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="history-2">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-lg-6">
+                    <div class="fs-12 fw-600 pe-xxl-5">
+                        <p>How much you care to meticulously cover up from paint splatter, how much you care to make sure the clients garden doesn’t get paint all over it, how much you care to lock up the clients property at the end of the day.</p>
+                        <p>At Toned Up, we do not compete on price, we compete on customer experience, putting care factor above anything else ensures customer experience is A1.</p>
+                    </div>
+                    <div class="row pt-6">
+                        <div class="col-lg-9 col-xl-8 col-xxl-7">
+                            <div class="row gx-2">
+                                <div class="col-6">
+                                    <a href="#form" class="btn w-100 btn-dark text-white fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-4 px-5">Book Now</a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="tel:<?= $phone_number ?>" class="btn w-100 btn-gradient text-dark fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-4 px-5">Call Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer-contact">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9 px-xxl-6">
+                <div class="letter-spacing-n02 fs-3 text-center fw-800 text-white line-height-1"><span class="text-primary">Don't forget!</span> Receive $250 cash for every successful referral you send our way!</div>
+            </div>
+        </div>
+        <div class="row justify-content-center pt-5">
+            <div class="col-lg-6">
+                <div class="row gx-3">
+                    <div class="col"><a href="#testimonials" class="btn w-100 btn-grey text-white fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-4 px-3">Call Now</a></div>
+                    <div class="col"><a href="#testimonials" class="btn w-100 btn-primary text-white fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-4 px-3">Get a Quote</a></div>
+                    <div class="col"><a href="#testimonials" class="btn w-100 btn-tertiary text-dark fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-4 px-3">Book Online</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php include __DIR__ . '/footer.php'; ?>

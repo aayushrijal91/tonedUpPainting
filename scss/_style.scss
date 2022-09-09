@@ -184,18 +184,50 @@ section.services {
             }
         }
     }
+}
 
-    @include media-breakpoint-up(xxl) {
-        .col-3, .col-md-3, .col-lg-3, .col-xl-3, .col-xxl-3 {
-            flex: 0 0 20%;
-            max-width: 20%;
-        }
+section.about-us {
+    background: $dark;
+    padding: 136px 0 176px;
+
+    .description {
+        color: $white;
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: 1.67;
+        padding-top: 51px;
     }
+}
+
+section.our-history {
+    position: relative;
+
+    .paint-brush {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 95%;
+    }
+
+    .history-1 {
+        background: $primary;
+        padding: 119px 0 48px;
+    }
+
+    .history-2 {
+        padding: 48px 0 139px;
+    }
+}
+
+section.footer-contact {
+    background-color: $dark;
+    padding: 147px 0 126px;
 }
 
 footer {
     font-size: 0.875rem;
-    background-color: #221f1f;
+    color: #5D5F68;
+    background-color: $black;
 
     @include media-breakpoint-down(sm) {
         font-size: 0.61rem;

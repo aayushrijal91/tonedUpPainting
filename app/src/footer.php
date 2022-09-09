@@ -1,8 +1,8 @@
 <footer>
 	<div class="container">
-		<div class="row justify-content-center justify-content-lg-between align-items-center">
+		<div class="row justify-content-center justify-content-lg-between align-items-center py-3">
 			<div class="col-auto">
-				<div class="row gx-2 gx-md-3 text-white justify-content-center">
+				<div class="row gx-2 gx-md-3 gx-xxl-5 fw-700 justify-content-center">
 					<div class="col-12 text-center pb-3 d-lg-none">
 						<a href="https://www.aiims.com.au/like-our-work/" target="_blank">
 							<?= renderImg("aiims.png", "logo") ?>
@@ -15,6 +15,9 @@
 					<div class="col-auto text-center">All Rights Reserved
 					</div>
 				</div>
+			</div>
+			<div class="col-auto">
+				<?= renderImg("payment-methods.png", "icons") ?>
 			</div>
 			<div class="col-auto d-none d-lg-block">
 				<a href="https://www.aiims.com.au/like-our-work/" target="_blank">
