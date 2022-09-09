@@ -36,3 +36,8 @@ $('#return-to-top').on('click', () => {
         scrollTop: 0
     }, 500);
 });
+
+$(".see-review-btn").on('click', function() {
+    $('.testimonial-card').removeClass('active');
+    $(this).parents('.testimonial-card').addClass('active');
+})

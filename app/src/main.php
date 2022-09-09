@@ -79,137 +79,157 @@ include __DIR__ . '/header.php';
 
 <section class="form" id="form">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-11">
-                <div class="row align-items-center">
-                    <div class="col-12 col-xl-6">
-                        <div class="letter-spacing-n2 text-dark fw-800 fs-6 letter-spacing-n02">Book in your FREE Quote</div>
-                        <form action="./src/form" method="POST" enctype="multipart/form-data">
-                            <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse">
-                            <div class="row no-gutters justify-content-lg-between">
-                                <div class="col-12 col-md-6 pr-md-1 pr-lg-2">
-                                    <div class="form-group">
-                                        <label for="name">Your Name</label>
-                                        <div class="input-group">
-                                            <input class="form-control bg-white rounded-0" type="text" placeholder="Marjorie" id="name" name="name" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6 pl-md-1 pl-lg-2">
-                                    <div class="form-group">
-                                        <label for="phone">Phone Number</label>
-                                        <div class="input-group">
-                                            <input class="form-control rounded-0 bg-white" type="tel" placeholder="0400 000 000" id="phone" name="phone" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label for="email">Email Address</label>
-                                        <div class="input-group">
-                                            <input class="form-control rounded-0 bg-white" type="email" id="email" placeholder="example@email.com" name="email" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label for="service">Your Painting Need</label>
-                                        <div class="input-group">
-                                            <select name="service" id="service" class="form-control rounded-0 bg-white">
-                                                <option selected disabled>Select an option</option>
-                                                <option>Handyman</option>
-                                                <option>Maintenance</option>
-                                                <option>Carpentry</option>
-                                                <option>Gyprock</option>
-                                                <option>Tiling</option>
-                                                <option>Doors & Windows</option>
-                                                <option>Carports</option>
-                                                <option>Home Renos</option>
-                                                <option>Roofing</option>
-                                                <option>Fencing</option>
-                                                <option>Plumbing</option>
-                                                <option>Waterproofing</option>
-                                                <option>Highpressure Cleaning</option>
-                                                <option>Electrical Work</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 pt-3 pt-md-5">
-                                    <div class="row no-gutters justify-content-between align-items-center">
-                                        <div class="col-12 col-md-auto pr-4">
-                                            <label for="file-upload" class="my-0" id="file-label">
-                                                <div class="bg-clear-light rounded-0 line-height-2 fs-16 fw-900 py-3 px-4">
-                                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M6.62792 4.47814L4.33392 6.77314C4.2098 6.89712 4.11133 7.04435 4.04415 7.20642C3.97697 7.36848 3.94239 7.5422 3.94239 7.71764C3.94239 7.89307 3.97697 8.06679 4.04415 8.22885C4.11133 8.39092 4.2098 8.53815 4.33392 8.66214C4.4579 8.78626 4.60514 8.88472 4.7672 8.9519C4.92927 9.01908 5.10298 9.05366 5.27842 9.05366C5.45385 9.05366 5.62757 9.01908 5.78964 8.9519C5.9517 8.88472 6.09893 8.78626 6.22292 8.66214L9.32292 5.56214C9.82384 5.0609 10.1052 4.38127 10.1052 3.67264C10.1052 2.964 9.82384 2.28437 9.32292 1.78314C9.07486 1.53487 8.78031 1.33791 8.4561 1.20354C8.13189 1.06916 7.78437 1 7.43342 1C7.08246 1 6.73495 1.06916 6.41074 1.20354C6.08652 1.33791 5.79197 1.53487 5.54392 1.78314L2.17392 5.15314C1.42226 5.90495 1 6.92453 1 7.98764C1 9.05075 1.42226 10.0703 2.17392 10.8221C2.92573 11.5738 3.94531 11.9961 5.00842 11.9961C6.07153 11.9961 7.09111 11.5738 7.84292 10.8221L10.9429 7.72214" stroke="#28292D" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
-                                                    Attach File
-                                                </div>
-                                            </label>
-                                            <input id="file-upload" class="form-control rounded-0" type="file" name="uploadedFile" onchange="fileUploaded('file-upload','uploaded-file-name')">
-                                        </div>
-                                        <div class="col-12 col-md pt-3 pt-md-0">
-                                            <div class="fs-14 fw-800">Improved Quote Accuracy (optional)</div>
-                                            <div class="text-light-grey fs-16 fw-700" id="uploaded-file-name">Send
-                                                us an image of your problem, so we can provide you an accurate quote
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-4 col-lg-7 col-xl-4 pt-4 pt-md-5">
-                                    <button type="submit" class="btn w-100 btn-primary text-white rounded-0 border-0 letter-spacing-n02 fw-700 fs-13 py-3">
-                                        Get Free Quote
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-12 col-xl-6 px-xxl-6 py-5 py-lg-4">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="review-card">
-                                    <div class="fw-700 h1 text-center"><span data-countup>200</span>+</div>
-                                    <div class="h11 text-center pb-5">Customer Reviews</div>
-                                    <div class="btn btn-tertiary btn-block text-white border-0 rounded-0 h12 py-3">See Testimonials</div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="review-card">
-                                    <div class="fw-700 h1 text-center">4.9</div>
-                                    <div class="h11 text-center pb-5">Customer Rating</div>
-                                    <div class="btn btn-red btn-block text-white border-0 rounded-0 h12 py-3"><?= renderImg("google.png", "logo") ?></div>
+        <div class="row justify-content-between">
+            <div class="col-12 col-xl-6 pe-xxl-6">
+                <div class="letter-spacing-n2 text-dark fw-800 fs-6 letter-spacing-n02">Book in your FREE Quote</div>
+                <form action="./src/form" method="POST" enctype="multipart/form-data">
+                    <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse">
+                    <div class="row no-gutters justify-content-lg-between">
+                        <div class="col-12 col-md-6 pr-md-1 pr-lg-2">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <div class="input-group">
+                                    <input class="form-control bg-white rounded-0" type="text" placeholder="Marjorie" id="name" name="name" required>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="row no-gutters pt-5">
-                            <div class="col-6 col-md">
-                                <div class="bg-teal d-flex flex-column align-items-center py-6">
-                                    <div class=""><?= renderImg("oneflare.png", "logo") ?></div>
-                                    <div class="py-3"><?= renderImg("stars.png", "icons") ?></div>
-                                    <div class="fw-700 text-white line-height-1">oneflare</div>
+                        <div class="col-12 col-md-6 pl-md-1 pl-lg-2">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <div class="input-group">
+                                    <input class="form-control rounded-0 bg-white" type="tel" placeholder="0400 000 000" id="phone" name="phone" required>
                                 </div>
                             </div>
-                            <div class="col-6 col-md">
-                                <div class="bg-orange d-flex flex-column align-items-center py-6">
-                                    <div class=""><?= renderImg("wom.png", "logo") ?></div>
-                                    <div class="py-3"><?= renderImg("stars.png", "icons") ?></div>
-                                    <div class="fw-700 text-white line-height-1">Word of Mouth</div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <div class="input-group">
+                                    <input class="form-control rounded-0 bg-white" type="email" id="email" placeholder="example@email.com" name="email" required>
                                 </div>
                             </div>
-                            <div class="col-6 col-md">
-                                <div class="bg-red d-flex flex-column align-items-center py-6">
-                                    <div class=""><?= renderImg("google-big.png", "logo") ?></div>
-                                    <div class="py-3"><?= renderImg("stars.png", "icons") ?></div>
-                                    <div class="fw-700 text-white line-height-1">Google</div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="service">Your Painting Need</label>
+                                <div class="input-group">
+                                    <select name="service" id="service" class="form-control rounded-0 bg-white">
+                                        <option selected disabled>Select an option</option>
+                                        <option>Handyman</option>
+                                        <option>Maintenance</option>
+                                        <option>Carpentry</option>
+                                        <option>Gyprock</option>
+                                        <option>Tiling</option>
+                                        <option>Doors & Windows</option>
+                                        <option>Carports</option>
+                                        <option>Home Renos</option>
+                                        <option>Roofing</option>
+                                        <option>Fencing</option>
+                                        <option>Plumbing</option>
+                                        <option>Waterproofing</option>
+                                        <option>Highpressure Cleaning</option>
+                                        <option>Electrical Work</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="col-6 col-md">
-                                <div class="bg-dark-blue d-flex flex-column align-items-center py-6">
-                                    <div class=""><?= renderImg("truelocal.png", "logo") ?></div>
-                                    <div class="py-3"><?= renderImg("stars.png", "icons") ?></div>
-                                    <div class="fw-700 text-white line-height-1">True Local</div>
+                        </div>
+                        <div class="col-12 pt-3 pt-md-5">
+                            <div class="row no-gutters justify-content-between align-items-center">
+                                <div class="col-12 col-md-auto pr-4">
+                                    <label for="file-upload" class="my-0" id="file-label">
+                                        <div class="bg-clear-light rounded-0 line-height-2 fs-16 fw-900 py-3 px-4">
+                                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.62792 4.47814L4.33392 6.77314C4.2098 6.89712 4.11133 7.04435 4.04415 7.20642C3.97697 7.36848 3.94239 7.5422 3.94239 7.71764C3.94239 7.89307 3.97697 8.06679 4.04415 8.22885C4.11133 8.39092 4.2098 8.53815 4.33392 8.66214C4.4579 8.78626 4.60514 8.88472 4.7672 8.9519C4.92927 9.01908 5.10298 9.05366 5.27842 9.05366C5.45385 9.05366 5.62757 9.01908 5.78964 8.9519C5.9517 8.88472 6.09893 8.78626 6.22292 8.66214L9.32292 5.56214C9.82384 5.0609 10.1052 4.38127 10.1052 3.67264C10.1052 2.964 9.82384 2.28437 9.32292 1.78314C9.07486 1.53487 8.78031 1.33791 8.4561 1.20354C8.13189 1.06916 7.78437 1 7.43342 1C7.08246 1 6.73495 1.06916 6.41074 1.20354C6.08652 1.33791 5.79197 1.53487 5.54392 1.78314L2.17392 5.15314C1.42226 5.90495 1 6.92453 1 7.98764C1 9.05075 1.42226 10.0703 2.17392 10.8221C2.92573 11.5738 3.94531 11.9961 5.00842 11.9961C6.07153 11.9961 7.09111 11.5738 7.84292 10.8221L10.9429 7.72214" stroke="#28292D" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            Attach File
+                                        </div>
+                                    </label>
+                                    <input id="file-upload" class="form-control rounded-0" type="file" name="uploadedFile" onchange="fileUploaded('file-upload','uploaded-file-name')">
                                 </div>
+                                <div class="col-12 col-md pt-3 pt-md-0">
+                                    <div class="fs-14 fw-800">Improved Quote Accuracy (optional)</div>
+                                    <div class="text-light-grey fs-16 fw-700" id="uploaded-file-name">Send
+                                        us an image of your problem, so we can provide you an accurate quote
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-7 col-xl-4 pt-4 pt-md-5">
+                            <button type="submit" class="btn w-100 btn-primary text-white rounded-0 border-0 letter-spacing-n02 fw-700 fs-13 py-3">
+                                Get Free Quote
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-xl-6 px-xxl-5">
+                <div class="letter-spacing-n02 fs-8 line-height-1 fw-800">Receive $250 cash for every successful referral that you send our way.</div>
+                <div class="testimonial-wrapper">
+                    <div class="testimonial-card">
+                        <div class="row align-items-center review-row">
+                            <div class="col-6 col-xl-5">
+                                <div class="row gx-3 align-items-center">
+                                    <div class="col-auto"><?= renderImg("user.png", "icons") ?></div>
+                                    <div class="col-auto">
+                                        <div class="text-white fs-13 fw-700">Michael Papalia</div>
+                                        <?= renderImg("testimonial-stars.png", "icons") ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="comment">“John did a great job on my house, he was a pleasure to deal with and I’d highly recommend him if you want a friendly and professional service.”</div>
+                                <a href="javascript:void(0)" class="btn fs-15 text-quartinary fw-600 see-review-btn">See Google Review</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card active">
+                        <div class="row align-items-center review-row">
+                            <div class="col-6 col-xl-5">
+                                <div class="row gx-3 align-items-center">
+                                    <div class="col-auto"><?= renderImg("user.png", "icons") ?></div>
+                                    <div class="col-auto">
+                                        <div class="text-white fs-13 fw-700">Alan Toovey</div>
+                                        <?= renderImg("testimonial-stars.png", "icons") ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="comment">“John did a great job on my house, he was a pleasure to deal with and I’d highly recommend him if you want a friendly and professional service.”</div>
+                                <a href="javascript:void(0)" class="btn fs-15 text-quartinary fw-600 see-review-btn">See Google Review</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="row align-items-center review-row">
+                            <div class="col-6 col-xl-5">
+                                <div class="row gx-3 align-items-center">
+                                    <div class="col-auto"><?= renderImg("user.png", "icons") ?></div>
+                                    <div class="col-auto">
+                                        <div class="text-white fs-13 fw-700">Rumer Kennedy</div>
+                                        <?= renderImg("testimonial-stars.png", "icons") ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="comment">“John did a great job on my house, he was a pleasure to deal with and I’d highly recommend him if you want a friendly and professional service.”</div>
+                                <a href="javascript:void(0)" class="btn fs-15 text-quartinary fw-600 see-review-btn">See Google Review</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="row align-items-center review-row">
+                            <div class="col-6 col-xl-5">
+                                <div class="row gx-3 align-items-center">
+                                    <div class="col-auto"><?= renderImg("user.png", "icons") ?></div>
+                                    <div class="col-auto">
+                                        <div class="text-white fs-13 fw-700">Adam Spitzer</div>
+                                        <?= renderImg("testimonial-stars.png", "icons") ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="comment">“John did a great job on my house, he was a pleasure to deal with and I’d highly recommend him if you want a friendly and professional service.”</div>
+                                <a href="javascript:void(0)" class="btn fs-15 text-quartinary fw-600 see-review-btn">See Google Review</a>
                             </div>
                         </div>
                     </div>

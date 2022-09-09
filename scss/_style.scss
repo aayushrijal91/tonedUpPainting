@@ -128,8 +128,42 @@ section.form {
         }
     }
 
-    .review-card {
-        border: 1px solid #f1f5f8;
+    .testimonial-wrapper {
+        background: $primary;
+        border-radius: 16px;
+        padding: 35px 0;
+        margin-top: 41px;
+
+        .testimonial-card {
+            padding: 37.5px 45px;
+            transition: 0.2s all;
+
+            &.active {
+                background: $tertiary;
+                border-radius: 16px;
+                transform: translateX(-4rem);
+                padding: 30px 45px;
+
+                .comment {
+                    display: block;
+                }
+
+                .see-review-btn {
+                    display: none;
+                }
+
+                .review-row {
+                    align-items: start !important;
+                }
+            }
+
+            .comment {
+                display: none;
+                color: $white;
+                line-height: 1.67;
+                font-weight: 700;
+            }
+        }
     }
 }
 
