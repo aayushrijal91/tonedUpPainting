@@ -1,6 +1,6 @@
 // AOS.init({ duration: 1500 });
 
-document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
+document.querySelectorAll('a[href="#form"], a[href="#testimonials"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -40,4 +40,13 @@ $('#return-to-top').on('click', () => {
 $(".see-review-btn").on('click', function() {
     $('.testimonial-card').removeClass('active');
     $(this).parents('.testimonial-card').addClass('active');
-})
+});
+
+function fileUploaded(uploadName, labelId) {
+    var file = document.getElementById(uploadName);
+    if (file.value != "") {
+        var theSplit = file.value.split('\\');
+        var fileName = theSplit[theSplit.length - 1];
+        $(`#${labelId}`).html(fileName.substring(0, 50));
+    }
+}

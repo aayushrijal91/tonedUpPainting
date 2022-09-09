@@ -5,7 +5,7 @@
 header {
     .header-top-bar {
         background-color: $grey;
-        border-bottom: 1px solid $white;
+        border-bottom: 1px solid #403f3f;
 
         .logo-wrapper {
             position: relative;
@@ -13,12 +13,12 @@ header {
             justify-content: center;
 
             .logo {
-                @include media-breakpoint-up(lg) {
+                @include media-breakpoint-up(xl) {
                     position: absolute;
                     top: -20px;
                 }
 
-                @include media-breakpoint-down(lg) {
+                @include media-breakpoint-down(xl) {
                     padding: 24px 48px;
                 }
             }
@@ -55,7 +55,7 @@ header {
         background-color: $dark;
         height: 80px;
 
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(xl) {
             display: none;
         }
     }
@@ -66,6 +66,10 @@ header {
         padding: 80px 0 0;
 
         @include media-breakpoint-up(lg) {
+            padding: 80px 0;
+        }
+
+        @include media-breakpoint-up(xl) {
             padding: 108px 0 138px;
         }
 
@@ -74,10 +78,14 @@ header {
             color: $white;
             font-weight: 800;
             line-height: 1.25;
+
+            @include media-breakpoint-only(lg) {
+                font-size: 3rem !important;
+            }
         }
 
         .banner-img {
-            @include media-breakpoint-up(lg) {
+            @include media-breakpoint-up(xl) {
                 position: absolute;
                 right: 0;
                 top: 0;
@@ -172,7 +180,7 @@ section.form {
                     padding: 30px 45px;
                     transform: translateX(-4px);
                 }
-                
+
                 @include media-breakpoint-up(xxl) {
                     transform: translateX(-4rem);
                 }
@@ -200,6 +208,17 @@ section.form {
     }
 }
 
+section.sticky-contact {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    bottom: 0;
+
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+}
+
 section.services {
     background: $clear-light;
     padding: 48px 0;
@@ -220,7 +239,7 @@ section.services {
         padding-bottom: 64px;
         line-height: 1.2;
 
-        @include media-breakpoint-up(xxl){
+        @include media-breakpoint-up(xxl) {
             padding-bottom: 126px;
         }
 
@@ -303,7 +322,7 @@ section.our-history {
         bottom: 0;
         height: 95%;
 
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(xl) {
             display: none;
         }
     }
@@ -347,8 +366,10 @@ footer {
     font-size: 0.875rem;
     color: #5D5F68;
     background-color: $black;
+    margin-bottom: 120px;
 
     @include media-breakpoint-down(sm) {
         font-size: 0.61rem;
+        margin-bottom: 0;
     }
 }

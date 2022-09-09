@@ -6,8 +6,8 @@ include __DIR__ . '/header.php';
 <header>
     <div class="header-top-bar">
         <div class="container-fluid px-xl-0">
-            <div class="row gx-xxl-5 justify-content-center justify-content-lg-end align-items-center">
-                <div class="col-12 col-lg">
+            <div class="row gx-xxl-5 justify-content-center justify-content-xl-end align-items-center">
+                <div class="col-12 col-xl">
                     <div class="logo-wrapper">
                         <a href="./" class="logo">
                             <?= renderImg("logo.png", "logo") ?>
@@ -42,7 +42,7 @@ include __DIR__ . '/header.php';
                         </div>
                     </div>
                 </div>
-                <div class="col col-md-auto px-0 px-md-3 px-xl-0 pt-md-4 pt-lg-0">
+                <div class="col col-md-auto px-0 px-md-3 px-xl-0 pt-md-4 pt-xl-0">
                     <div class="row gx-0 align-items-center header-buttons">
                         <div class="col-6 col-md-auto">
                             <a href="tel:<?= $phone_number ?>" class="btn btn-primary py-3 px-md-5 px-xl-3 px-xxl-5">
@@ -63,7 +63,7 @@ include __DIR__ . '/header.php';
     <div class="banner">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-xl-6 col-xxl-7">
+                <div class="col-lg-6 col-xxl-7">
                     <div class="heroHeading fs-2 pe-xxl-7">
                         We’re so confident that you will be satisfied with our work, we back it with a 5-Year Guarantee!
                     </div>
@@ -71,7 +71,7 @@ include __DIR__ . '/header.php';
                         We are Qualified & Considerate painting Professionals specialising in residential painting in Melbourne & surrounding suburbs.
                     </div>
                 </div>
-                <div class="col d-none d-xl-block d-xxl-none"><?= renderImg("banner-sm.png", "background") ?></div>
+                <div class="col d-none d-lg-block d-xxl-none"><?= renderImg("banner-sm.png", "background") ?></div>
             </div>
         </div>
         <?= renderImg("banner.png", "background", "banner-img d-none d-xxl-block") ?>
@@ -164,74 +164,78 @@ include __DIR__ . '/header.php';
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-xl-6 px-xxl-5 py-5 py-lg-0">
-                <div class="letter-spacing-n02 fs-8 line-height-1 fw-800">Receive $250 cash for every successful referral that you send our way.</div>
-                <div class="testimonial-wrapper">
-                    <div class="testimonial-card">
-                        <div class="row align-items-center review-row">
-                            <div class="col-md-5 col-lg-6 col-xl-5">
-                                <div class="row gx-3 align-items-center">
-                                    <div class="col-auto"><?= renderImg("user.png", "icons") ?></div>
-                                    <div class="col-auto">
-                                        <div class="text-white fs-13 fw-700">Michael Papalia</div>
-                                        <?= renderImg("testimonial-stars.png", "icons") ?>
+            <div class="col-12 col-xl-6 px-xxl-5 py-5 py-xl-0">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-xl-12" id="testimonials">
+                        <div class="letter-spacing-n02 fs-8 line-height-1 fw-800">Receive $250 cash for every successful referral that you send our way.</div>
+                        <div class="testimonial-wrapper">
+                            <div class="testimonial-card">
+                                <div class="row align-items-center review-row">
+                                    <div class="col-md-5 col-xl-6 col-xxl-5">
+                                        <div class="row gx-3 align-items-center">
+                                            <div class="col-auto"><?= renderImg("user.png", "icons") ?></div>
+                                            <div class="col-auto">
+                                                <div class="text-white fs-13 fw-700">Michael Papalia</div>
+                                                <?= renderImg("testimonial-stars.png", "icons") ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col pt-4 pt-md-0">
+                                        <div class="comment">“John did a great job on my house, he was a pleasure to deal with and I’d highly recommend him if you want a friendly and professional service.”</div>
+                                        <a href="javascript:void(0)" class="btn fs-15 text-quartinary fw-600 see-review-btn">See Google Review</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col pt-4 pt-md-0">
-                                <div class="comment">“John did a great job on my house, he was a pleasure to deal with and I’d highly recommend him if you want a friendly and professional service.”</div>
-                                <a href="javascript:void(0)" class="btn fs-15 text-quartinary fw-600 see-review-btn">See Google Review</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card active">
-                        <div class="row align-items-center review-row">
-                            <div class="col-md-5 col-lg-6 col-xl-5">
-                                <div class="row gx-3 align-items-center">
-                                    <div class="col-auto"><?= renderImg("user.png", "icons") ?></div>
-                                    <div class="col-auto">
-                                        <div class="text-white fs-13 fw-700">Alan Toovey</div>
-                                        <?= renderImg("testimonial-stars.png", "icons") ?>
+                            <div class="testimonial-card active">
+                                <div class="row align-items-center review-row">
+                                    <div class="col-md-5 col-xl-6 col-xxl-5">
+                                        <div class="row gx-3 align-items-center">
+                                            <div class="col-auto"><?= renderImg("alan.png", "icons") ?></div>
+                                            <div class="col-auto">
+                                                <div class="text-white fs-13 fw-700">Alan Toovey</div>
+                                                <?= renderImg("testimonial-stars.png", "icons") ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col pt-4 pt-md-0">
+                                        <div class="comment">“John did a great job on my house, he was a pleasure to deal with and I’d highly recommend him if you want a friendly and professional service.”</div>
+                                        <a href="javascript:void(0)" class="btn fs-15 text-quartinary fw-600 see-review-btn">See Google Review</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col pt-4 pt-md-0">
-                                <div class="comment">“John did a great job on my house, he was a pleasure to deal with and I’d highly recommend him if you want a friendly and professional service.”</div>
-                                <a href="javascript:void(0)" class="btn fs-15 text-quartinary fw-600 see-review-btn">See Google Review</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="row align-items-center review-row">
-                            <div class="col-md-5 col-lg-6 col-xl-5">
-                                <div class="row gx-3 align-items-center">
-                                    <div class="col-auto"><?= renderImg("user.png", "icons") ?></div>
-                                    <div class="col-auto">
-                                        <div class="text-white fs-13 fw-700">Rumer Kennedy</div>
-                                        <?= renderImg("testimonial-stars.png", "icons") ?>
+                            <div class="testimonial-card">
+                                <div class="row align-items-center review-row">
+                                    <div class="col-md-5 col-xl-6 col-xxl-5">
+                                        <div class="row gx-3 align-items-center">
+                                            <div class="col-auto"><?= renderImg("rumer.png", "icons") ?></div>
+                                            <div class="col-auto">
+                                                <div class="text-white fs-13 fw-700">Rumer Kennedy</div>
+                                                <?= renderImg("testimonial-stars.png", "icons") ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col pt-4 pt-md-0">
+                                        <div class="comment">“John did a great job on my house, he was a pleasure to deal with and I’d highly recommend him if you want a friendly and professional service.”</div>
+                                        <a href="javascript:void(0)" class="btn fs-15 text-quartinary fw-600 see-review-btn">See Google Review</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col pt-4 pt-md-0">
-                                <div class="comment">“John did a great job on my house, he was a pleasure to deal with and I’d highly recommend him if you want a friendly and professional service.”</div>
-                                <a href="javascript:void(0)" class="btn fs-15 text-quartinary fw-600 see-review-btn">See Google Review</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="row align-items-center review-row">
-                            <div class="col-md-5 col-lg-6 col-xl-5">
-                                <div class="row gx-3 align-items-center">
-                                    <div class="col-auto"><?= renderImg("user.png", "icons") ?></div>
-                                    <div class="col-auto">
-                                        <div class="text-white fs-13 fw-700">Adam Spitzer</div>
-                                        <?= renderImg("testimonial-stars.png", "icons") ?>
+                            <div class="testimonial-card">
+                                <div class="row align-items-center review-row">
+                                    <div class="col-md-5 col-xl-6 col-xxl-5">
+                                        <div class="row gx-3 align-items-center">
+                                            <div class="col-auto"><?= renderImg("adam.png", "icons") ?></div>
+                                            <div class="col-auto">
+                                                <div class="text-white fs-13 fw-700">Adam Spitzer</div>
+                                                <?= renderImg("testimonial-stars.png", "icons") ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col pt-4 pt-md-0">
+                                        <div class="comment">“John did a great job on my house, he was a pleasure to deal with and I’d highly recommend him if you want a friendly and professional service.”</div>
+                                        <a href="javascript:void(0)" class="btn fs-15 text-quartinary fw-600 see-review-btn">See Google Review</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col pt-4 pt-md-0">
-                                <div class="comment">“John did a great job on my house, he was a pleasure to deal with and I’d highly recommend him if you want a friendly and professional service.”</div>
-                                <a href="javascript:void(0)" class="btn fs-15 text-quartinary fw-600 see-review-btn">See Google Review</a>
                             </div>
                         </div>
                     </div>
@@ -241,7 +245,7 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
-<section class="bg-primary">
+<section class="bg-primary sticky-contact">
     <div class="container">
         <div class="row justify-content-around">
             <div class="col-auto py-4 py-md-5">
@@ -265,7 +269,7 @@ include __DIR__ . '/header.php';
             $services = [
                 "Fence spray painting",
                 "Timber staining",
-                "Renovations/extensions",
+                "Renovations / extensions",
                 "Pressure washing",
                 "$500.00",
                 "Minor rot repairss",
@@ -276,7 +280,7 @@ include __DIR__ . '/header.php';
 
             foreach ($services as $key => $service) {
             ?>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-xl-4">
                     <div class="service_card">
                         <div><?= renderImg("service-" . ($key + 1) . ".png", "lib", "w-100") ?></div>
                         <div class="title<?= ($key === 4) ? " hoverlay" : "" ?>"><?= $service ?></div>
@@ -330,7 +334,7 @@ include __DIR__ . '/header.php';
                     </div>
                 </div>
             </div>
-            <div class="col-auto col-lg-6 col-xxl-auto"><?= renderImg("our-work.png", "lib") ?></div>
+            <div class="col-auto col-lg-12 ol-xl-6 col-xxl-auto"><?= renderImg("our-work.png", "lib", "w-100") ?></div>
         </div>
     </div>
 </section>
@@ -339,8 +343,8 @@ include __DIR__ . '/header.php';
     <?= renderImg("paint-brush.png", "lib", "paint-brush") ?>
     <div class="history-1">
         <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-lg-6">
+            <div class="row justify-content-center justify-content-lg-end">
+                <div class="col-lg-11 col-xl-6">
                     <div class="fs-7 text-quartinary fw-800 letter-spacing-n02 line-height-4 pb-3">A long time ago we made the decision to do one thing, and do it really well.</div>
                     <div class="text-white fs-12 fw-600 pt-4 pe-xxl-4">Residential repaints can be one of the more challenging projects for a contractor to tackle. It’s easy to nail a great paint job but the challenge comes down to the care factor.</div>
                 </div>
@@ -349,8 +353,8 @@ include __DIR__ . '/header.php';
     </div>
     <div class="history-2">
         <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-lg-6">
+            <div class="row justify-content-center justify-content-lg-end">
+                <div class="col-lg-11 col-xl-6">
                     <div class="fs-12 fw-600 pe-xxl-5">
                         <p>How much you care to meticulously cover up from paint splatter, how much you care to make sure the clients garden doesn’t get paint all over it, how much you care to lock up the clients property at the end of the day.</p>
                         <p>At Toned Up, we do not compete on price, we compete on customer experience, putting care factor above anything else ensures customer experience is A1.</p>
@@ -376,12 +380,12 @@ include __DIR__ . '/header.php';
 <section class="footer-contact">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-9 px-xxl-6">
+            <div class="col-lg-11 col-xl-9 px-xxl-6">
                 <div class="letter-spacing-n02 fs-3 text-center fw-800 text-white line-height-1"><span class="text-primary">Don't forget!</span> Receive $250 cash for every successful referral you send our way!</div>
             </div>
         </div>
         <div class="row justify-content-center pt-5">
-            <div class="col-lg-6">
+            <div class="col-lg-7 col-xl-6">
                 <div class="row gy-2 gy-md-0 gx-3">
                     <div class="col-md"><a href="#testimonials" class="btn w-100 btn-grey text-white fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-3 py-md-4 px-3">Call Now</a></div>
                     <div class="col-md"><a href="#testimonials" class="btn w-100 btn-primary text-white fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-3 py-md-4 px-3">Get a Quote</a></div>
