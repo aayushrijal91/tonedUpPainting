@@ -1,0 +1,42 @@
+$font-helvetica: "Helvetica Neue", sans-serif;
+
+$font-body: $font-helvetica;
+
+$font-families: (
+    "helvetica": "Helvetica Neue",
+);
+
+@each $name,
+$font-family in $font-families {
+    .font-#{$name} {
+        font-family: $font-family, sans-serif;
+    }
+}
+
+$asset-path: "../webfonts/";
+
+/* Fonts includer */
+@mixin font-face($font-family, $font-file, $weight: "normal", $style: "normal") {
+    @font-face {
+        font-family: $font-family;
+        src: local($font-file), url($asset-path + $font-file + ".woff") format("woff"),
+            url($asset-path + $font-file + ".woff2") format("woff2");
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+@include font-face("Helvetica Neue", "helveticaneue-ultralight", 300);
+@include font-face("Helvetica Neue", "helveticaneue-thin", 400);
+@include font-face("Helvetica Neue", "helveticaneue-light", 500);
+@include font-face("Helvetica Neue", "helveticaneue", 600);
+@include font-face("Helvetica Neue", "helveticaneue-medium", 700);
+@include font-face("Helvetica Neue", "helveticaneue-bold", 800);
+
+$font-weights: 300, 400, 500, 600, 700, 800, 900;
+
+@each $fw in $font-weights {
+    .fw-#{$fw} {
+        font-weight: $fw;
+    }
+}
