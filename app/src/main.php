@@ -6,7 +6,7 @@ include __DIR__ . '/header.php';
 <header>
     <div class="header-top-bar">
         <div class="container-fluid px-xl-0">
-            <div class="row gx-xl-5 justify-content-center justify-content-lg-end align-items-center">
+            <div class="row gx-xxl-5 justify-content-center justify-content-lg-end align-items-center">
                 <div class="col-12 col-lg">
                     <div class="logo-wrapper">
                         <a href="./" class="logo">
@@ -42,15 +42,15 @@ include __DIR__ . '/header.php';
                         </div>
                     </div>
                 </div>
-                <div class="col col-md-auto px-0 px-md-3 pt-md-4 pt-lg-0">
+                <div class="col col-md-auto px-0 px-md-3 px-xl-0 pt-md-4 pt-lg-0">
                     <div class="row gx-0 align-items-center header-buttons">
                         <div class="col-6 col-md-auto">
-                            <a href="tel:<?= $phone_number ?>" class="btn btn-primary py-3 px-md-5">
+                            <a href="tel:<?= $phone_number ?>" class="btn btn-primary py-3 px-md-5 px-xl-3 px-xxl-5">
                                 <?= $phone_number ?>
                             </a>
                         </div>
                         <div class="col-6 col-md-auto">
-                            <a href="#form" class="btn btn-gradient py-3 px-md-5">
+                            <a href="#form" class="btn btn-gradient py-3 px-md-5 px-xl-3 px-xxl-5">
                                 Book Online
                             </a>
                         </div>
@@ -63,7 +63,7 @@ include __DIR__ . '/header.php';
     <div class="banner">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-xl-7">
+                <div class="col-xl-6 col-xxl-7">
                     <div class="heroHeading fs-2 pe-xxl-7">
                         We’re so confident that you will be satisfied with our work, we back it with a 5-Year Guarantee!
                     </div>
@@ -71,9 +71,10 @@ include __DIR__ . '/header.php';
                         We are Qualified & Considerate painting Professionals specialising in residential painting in Melbourne & surrounding suburbs.
                     </div>
                 </div>
+                <div class="col d-none d-xl-block d-xxl-none"><?= renderImg("banner-sm.png", "background") ?></div>
             </div>
         </div>
-        <?= renderImg("banner.png", "background", "banner-img d-none d-lg-block") ?>
+        <?= renderImg("banner.png", "background", "banner-img d-none d-xxl-block") ?>
         <?= renderImg("banner-sm.png", "background", "banner-img d-lg-none pt-5") ?>
     </div>
 </header>
@@ -319,7 +320,7 @@ include __DIR__ . '/header.php';
         <div class="row gx-0 align-items-center">
             <div class="col">
                 <div class="row gx-0 justify-content-end">
-                    <div class="col-lg-11 col-xl-10 py-5 p-md-5">
+                    <div class="col-xxl-10 py-5 p-md-5">
                         <div class="fs-4 fw-800 text-dark text-capitalize line-height-1 letter-spacing-n02">At Toned Up Painting, we appreciate every customer.</div>
                         <div class="description fs-12 line-height-2 fw-700 py-4 py-md-5 pe-xxl-6">
                             <p>To show that appreciation, we arrive to appointments on time, listen to your concerns and opinions, and always treat you and your property with respect.</p>
@@ -329,7 +330,7 @@ include __DIR__ . '/header.php';
                     </div>
                 </div>
             </div>
-            <div class="col-auto"><?= renderImg("our-work.png", "lib") ?></div>
+            <div class="col-auto col-lg-6 col-xxl-auto"><?= renderImg("our-work.png", "lib") ?></div>
         </div>
     </div>
 </section>

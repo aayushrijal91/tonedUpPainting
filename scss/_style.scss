@@ -173,7 +173,7 @@ section.form {
                     transform: translateX(-4px);
                 }
                 
-                @include media-breakpoint-up(lg) {
+                @include media-breakpoint-up(xxl) {
                     transform: translateX(-4rem);
                 }
 
@@ -218,14 +218,14 @@ section.services {
         text-align: center;
         color: $dark;
         padding-bottom: 64px;
+        line-height: 1.2;
 
-        @include media-breakpoint-up(lg){
+        @include media-breakpoint-up(xxl){
             padding-bottom: 126px;
         }
 
         @include media-breakpoint-down(sm) {
             font-size: 2rem !important;
-            line-height: 1.2;
         }
     }
 
