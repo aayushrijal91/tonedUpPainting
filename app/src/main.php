@@ -6,8 +6,8 @@ include __DIR__ . '/header.php';
 <header>
     <div class="header-top-bar">
         <div class="container-fluid px-xl-0">
-            <div class="row gx-xl-5 justify-content-end align-items-center">
-                <div class="col">
+            <div class="row gx-xl-5 justify-content-center justify-content-md-end align-items-center">
+                <div class="col-12 col-md">
                     <div class="logo-wrapper">
                         <a href="./" class="logo">
                             <?= renderImg("logo.png", "logo") ?>
@@ -29,7 +29,7 @@ include __DIR__ . '/header.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-auto text-white fs-14 fw-600">
+                <div class="col-auto text-white fs-14 fw-600 py-4 py-md-0">
                     Toned Up Specialises in Residential Painting
                 </div>
                 <div class="col-auto">
@@ -42,14 +42,14 @@ include __DIR__ . '/header.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-auto">
+                <div class="col col-md-auto px-0 px-md-3">
                     <div class="row gx-0 align-items-center header-buttons">
-                        <div class="col-auto">
+                        <div class="col-6 col-md-auto">
                             <a href="tel:<?= $phone_number ?>" class="btn btn-primary py-3 px-md-5">
                                 <?= $phone_number ?>
                             </a>
                         </div>
-                        <div class="col-auto">
+                        <div class="col-6 col-md-auto">
                             <a href="#form" class="btn btn-gradient py-3 px-md-5">
                                 Book Online
                             </a>
@@ -73,7 +73,8 @@ include __DIR__ . '/header.php';
                 </div>
             </div>
         </div>
-        <?= renderImg("banner.png", "background", "banner-img") ?>
+        <?= renderImg("banner.png", "background", "banner-img d-none d-md-block") ?>
+        <?= renderImg("banner-sm.png", "background", "banner-img d-md-none pt-5") ?>
     </div>
 </header>
 
@@ -162,12 +163,12 @@ include __DIR__ . '/header.php';
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-xl-6 px-xxl-5">
+            <div class="col-12 col-xl-6 px-xxl-5 py-5 py-md-0">
                 <div class="letter-spacing-n02 fs-8 line-height-1 fw-800">Receive $250 cash for every successful referral that you send our way.</div>
                 <div class="testimonial-wrapper">
                     <div class="testimonial-card">
                         <div class="row align-items-center review-row">
-                            <div class="col-6 col-xl-5">
+                            <div class="col-md-6 col-xl-5">
                                 <div class="row gx-3 align-items-center">
                                     <div class="col-auto"><?= renderImg("user.png", "icons") ?></div>
                                     <div class="col-auto">
@@ -176,7 +177,7 @@ include __DIR__ . '/header.php';
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col pt-4 pt-md-0">
                                 <div class="comment">“John did a great job on my house, he was a pleasure to deal with and I’d highly recommend him if you want a friendly and professional service.”</div>
                                 <a href="javascript:void(0)" class="btn fs-15 text-quartinary fw-600 see-review-btn">See Google Review</a>
                             </div>
@@ -184,7 +185,7 @@ include __DIR__ . '/header.php';
                     </div>
                     <div class="testimonial-card active">
                         <div class="row align-items-center review-row">
-                            <div class="col-6 col-xl-5">
+                            <div class="col-md-6 col-xl-5">
                                 <div class="row gx-3 align-items-center">
                                     <div class="col-auto"><?= renderImg("user.png", "icons") ?></div>
                                     <div class="col-auto">
@@ -193,7 +194,7 @@ include __DIR__ . '/header.php';
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col pt-4 pt-md-0">
                                 <div class="comment">“John did a great job on my house, he was a pleasure to deal with and I’d highly recommend him if you want a friendly and professional service.”</div>
                                 <a href="javascript:void(0)" class="btn fs-15 text-quartinary fw-600 see-review-btn">See Google Review</a>
                             </div>
@@ -201,7 +202,7 @@ include __DIR__ . '/header.php';
                     </div>
                     <div class="testimonial-card">
                         <div class="row align-items-center review-row">
-                            <div class="col-6 col-xl-5">
+                            <div class="col-md-6 col-xl-5">
                                 <div class="row gx-3 align-items-center">
                                     <div class="col-auto"><?= renderImg("user.png", "icons") ?></div>
                                     <div class="col-auto">
@@ -210,7 +211,7 @@ include __DIR__ . '/header.php';
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col pt-4 pt-md-0">
                                 <div class="comment">“John did a great job on my house, he was a pleasure to deal with and I’d highly recommend him if you want a friendly and professional service.”</div>
                                 <a href="javascript:void(0)" class="btn fs-15 text-quartinary fw-600 see-review-btn">See Google Review</a>
                             </div>
@@ -218,7 +219,7 @@ include __DIR__ . '/header.php';
                     </div>
                     <div class="testimonial-card">
                         <div class="row align-items-center review-row">
-                            <div class="col-6 col-xl-5">
+                            <div class="col-md-6 col-xl-5">
                                 <div class="row gx-3 align-items-center">
                                     <div class="col-auto"><?= renderImg("user.png", "icons") ?></div>
                                     <div class="col-auto">
@@ -227,7 +228,7 @@ include __DIR__ . '/header.php';
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col pt-4 pt-md-0">
                                 <div class="comment">“John did a great job on my house, he was a pleasure to deal with and I’d highly recommend him if you want a friendly and professional service.”</div>
                                 <a href="javascript:void(0)" class="btn fs-15 text-quartinary fw-600 see-review-btn">See Google Review</a>
                             </div>
@@ -242,13 +243,13 @@ include __DIR__ . '/header.php';
 <section class="bg-primary">
     <div class="container">
         <div class="row justify-content-around">
-            <div class="col-auto py-5">
+            <div class="col-auto py-4 py-md-5">
                 <a href="tel:<?= $phone_number ?>" class="text-white line-height-1 p-0 fs-13 fw-700"><?= $phone_number ?></a>
             </div>
-            <div class="col-auto py-5">
+            <div class="col-auto py-4 py-md-5">
                 <a href="#form" class="text-white line-height-1 p-0 fs-13 fw-700">Get A Free Quote</a>
             </div>
-            <div class="col-auto py-5">
+            <div class="col-auto py-4 py-md-5">
                 <a href="#form" class="text-white line-height-1 p-0 fs-13 fw-700">Book Online</a>
             </div>
         </div>
@@ -287,7 +288,7 @@ include __DIR__ . '/header.php';
 
 <section class="about-us">
     <div class="container">
-        <div class="fs-4 fw-800 text-white text-center text-capitalize pb-5">Qualified &amp; Considerate Painting Professionals</div>
+        <div class="heroHeading fs-4 fw-800 text-white text-center text-capitalize pb-4 pb-md-5">Qualified &amp; Considerate Painting Professionals</div>
         <div class="row justify-content-center gx-xl-4">
             <div class="col-md-6 col-lg-4">
                 <?= renderImg("about-1.png", "lib", "w-100") ?>
@@ -318,13 +319,13 @@ include __DIR__ . '/header.php';
         <div class="row gx-0 align-items-center">
             <div class="col">
                 <div class="row gx-0 justify-content-end">
-                    <div class="col-11 col-xl-10 p-5">
+                    <div class="col-md-11 col-xl-10 py-5 p-md-5">
                         <div class="fs-4 fw-800 text-dark text-capitalize line-height-1 letter-spacing-n02">At Toned Up Painting, we appreciate every customer.</div>
-                        <div class="description fs-12 line-height-2 fw-700 py-5 pe-xxl-6">
+                        <div class="description fs-12 line-height-2 fw-700 py-4 py-md-5 pe-xxl-6">
                             <p>To show that appreciation, we arrive to appointments on time, listen to your concerns and opinions, and always treat you and your property with respect.</p>
                             <p>And while the quality of our work is always top-notch, we don't mind having a reputation as a customer-centric painting company.</p>
                         </div>
-                        <a href="#testimonials" class="btn btn-dark text-white fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-4 px-5">See Testiomonials</a>
+                        <a href="#testimonials" class="btn btn-dark text-white fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-3 py-md-4 px-5">See Testiomonials</a>
                     </div>
                 </div>
             </div>
@@ -353,14 +354,14 @@ include __DIR__ . '/header.php';
                         <p>How much you care to meticulously cover up from paint splatter, how much you care to make sure the clients garden doesn’t get paint all over it, how much you care to lock up the clients property at the end of the day.</p>
                         <p>At Toned Up, we do not compete on price, we compete on customer experience, putting care factor above anything else ensures customer experience is A1.</p>
                     </div>
-                    <div class="row pt-6">
+                    <div class="row pt-4 pt-md-6">
                         <div class="col-lg-9 col-xl-8 col-xxl-7">
                             <div class="row gx-2">
                                 <div class="col-6">
-                                    <a href="#form" class="btn w-100 btn-dark text-white fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-4 px-5">Book Now</a>
+                                    <a href="#form" class="btn w-100 btn-dark text-white fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-3 py-md-4 px-md-5">Book Now</a>
                                 </div>
                                 <div class="col-6">
-                                    <a href="tel:<?= $phone_number ?>" class="btn w-100 btn-gradient text-dark fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-4 px-5">Call Us</a>
+                                    <a href="tel:<?= $phone_number ?>" class="btn w-100 btn-gradient text-dark fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-3 py-md-4 px-md-5">Call Us</a>
                                 </div>
                             </div>
                         </div>
@@ -380,10 +381,10 @@ include __DIR__ . '/header.php';
         </div>
         <div class="row justify-content-center pt-5">
             <div class="col-lg-6">
-                <div class="row gx-3">
-                    <div class="col"><a href="#testimonials" class="btn w-100 btn-grey text-white fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-4 px-3">Call Now</a></div>
-                    <div class="col"><a href="#testimonials" class="btn w-100 btn-primary text-white fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-4 px-3">Get a Quote</a></div>
-                    <div class="col"><a href="#testimonials" class="btn w-100 btn-tertiary text-dark fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-4 px-3">Book Online</a></div>
+                <div class="row gy-2 gy-md-0 gx-3">
+                    <div class="col-md"><a href="#testimonials" class="btn w-100 btn-grey text-white fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-3 py-md-4 px-3">Call Now</a></div>
+                    <div class="col-md"><a href="#testimonials" class="btn w-100 btn-primary text-white fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-3 py-md-4 px-3">Get a Quote</a></div>
+                    <div class="col-md"><a href="#testimonials" class="btn w-100 btn-tertiary text-dark fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-3 py-md-4 px-3">Book Online</a></div>
                 </div>
             </div>
         </div>

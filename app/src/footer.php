@@ -16,7 +16,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-auto">
+			<div class="col-auto pt-3 pt-md-0">
 				<?= renderImg("payment-methods.png", "icons") ?>
 			</div>
 			<div class="col-auto d-none d-lg-block">
