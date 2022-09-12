@@ -204,6 +204,18 @@ section.form {
                 line-height: 1.67;
                 font-weight: 700;
             }
+
+            .icon {
+                height: 45px;
+                width: 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: $white;
+            }
         }
     }
 }
@@ -366,7 +378,7 @@ footer {
     font-size: 0.875rem;
     color: #5D5F68;
     background-color: $black;
-    margin-bottom: 120px;
+    margin-bottom: 72px;
 
     @include media-breakpoint-down(sm) {
         font-size: 0.61rem;

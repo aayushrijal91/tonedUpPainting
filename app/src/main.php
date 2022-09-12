@@ -35,10 +35,10 @@ include __DIR__ . '/header.php';
                 <div class="col-auto">
                     <div class="row gx-3">
                         <div class="col-auto">
-                            <a href="#" class=""><?= renderImg("facebook.png", "icons") ?></a>
+                            <a href="https://www.facebook.com/profile.php?id=100083383505460" class=""><?= renderImg("facebook.png", "icons") ?></a>
                         </div>
                         <div class="col-auto">
-                            <a href="#" class=""><?= renderImg("instagram.png", "icons") ?></a>
+                            <a href="https://www.instagram.com/tonedup_painting/" class=""><?= renderImg("instagram.png", "icons") ?></a>
                         </div>
                     </div>
                 </div>
@@ -117,20 +117,14 @@ include __DIR__ . '/header.php';
                                 <div class="input-group">
                                     <select name="service" id="service" class="form-control rounded-0 bg-white">
                                         <option selected disabled>Select an option</option>
-                                        <option>Handyman</option>
-                                        <option>Maintenance</option>
-                                        <option>Carpentry</option>
-                                        <option>Gyprock</option>
-                                        <option>Tiling</option>
-                                        <option>Doors & Windows</option>
-                                        <option>Carports</option>
-                                        <option>Home Renos</option>
-                                        <option>Roofing</option>
-                                        <option>Fencing</option>
-                                        <option>Plumbing</option>
-                                        <option>Waterproofing</option>
-                                        <option>Highpressure Cleaning</option>
-                                        <option>Electrical Work</option>
+                                        <option>Fence spray painting</option>
+                                        <option>Timber staining</option>
+                                        <option>Renovations/Extensions</option>
+                                        <option>Pressure washing</option>
+                                        <option>Minor rot repairs</option>
+                                        <option>Period homes</option>
+                                        <option>Commercial & strata re-paints</option>
+                                        <option>Interior & exterior painting</option>
                                     </select>
                                 </div>
                             </div>
@@ -173,15 +167,15 @@ include __DIR__ . '/header.php';
                                 <div class="row align-items-center review-row">
                                     <div class="col-md-5 col-xl-6 col-xxl-5">
                                         <div class="row gx-3 align-items-center">
-                                            <div class="col-auto"><?= renderImg("user.png", "icons") ?></div>
+                                            <div class="col-auto"><div class="icon bg-purple">N</div></div>
                                             <div class="col-auto">
-                                                <div class="text-white fs-13 fw-700">Michael Papalia</div>
+                                                <div class="text-white fs-13 fw-700">Nick Adams</div>
                                                 <?= renderImg("testimonial-stars.png", "icons") ?>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col pt-4 pt-md-0">
-                                        <div class="comment">“John did a great job on my house, he was a pleasure to deal with and I’d highly recommend him if you want a friendly and professional service.”</div>
+                                        <div class="comment">“John from Toned Up provided prompt, professional and high  quality work. The painting work he did looks amazing. I would recommend him to anyone looking to get some painting done.”</div>
                                         <a href="javascript:void(0)" class="btn fs-15 text-quartinary fw-600 see-review-btn">See Google Review</a>
                                     </div>
                                 </div>
@@ -190,15 +184,15 @@ include __DIR__ . '/header.php';
                                 <div class="row align-items-center review-row">
                                     <div class="col-md-5 col-xl-6 col-xxl-5">
                                         <div class="row gx-3 align-items-center">
-                                            <div class="col-auto"><?= renderImg("alan.png", "icons") ?></div>
+                                            <div class="col-auto"><div class="icon bg-orange">R</div></div>
                                             <div class="col-auto">
-                                                <div class="text-white fs-13 fw-700">Alan Toovey</div>
+                                                <div class="text-white fs-13 fw-700">Richard Hawkins</div>
                                                 <?= renderImg("testimonial-stars.png", "icons") ?>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col pt-4 pt-md-0">
-                                        <div class="comment">“John did a great job on my house, he was a pleasure to deal with and I’d highly recommend him if you want a friendly and professional service.”</div>
+                                        <div class="comment">“John did a stirling job on our bathroom repaint. He does quality work at a fair price. I highly recommend him.”</div>
                                         <a href="javascript:void(0)" class="btn fs-15 text-quartinary fw-600 see-review-btn">See Google Review</a>
                                     </div>
                                 </div>
@@ -207,15 +201,15 @@ include __DIR__ . '/header.php';
                                 <div class="row align-items-center review-row">
                                     <div class="col-md-5 col-xl-6 col-xxl-5">
                                         <div class="row gx-3 align-items-center">
-                                            <div class="col-auto"><?= renderImg("rumer.png", "icons") ?></div>
+                                            <div class="col-auto"><?= renderImg("user.png", "icons") ?></div>
                                             <div class="col-auto">
-                                                <div class="text-white fs-13 fw-700">Rumer Kennedy</div>
+                                                <div class="text-white fs-13 fw-700">Michael Papalia</div>
                                                 <?= renderImg("testimonial-stars.png", "icons") ?>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col pt-4 pt-md-0">
-                                        <div class="comment">“John did a great job on my house, he was a pleasure to deal with and I’d highly recommend him if you want a friendly and professional service.”</div>
+                                        <div class="comment">“John was first class in response rate and the work done, could not recommend him enough!”</div>
                                         <a href="javascript:void(0)" class="btn fs-15 text-quartinary fw-600 see-review-btn">See Google Review</a>
                                     </div>
                                 </div>
@@ -224,7 +218,7 @@ include __DIR__ . '/header.php';
                                 <div class="row align-items-center review-row">
                                     <div class="col-md-5 col-xl-6 col-xxl-5">
                                         <div class="row gx-3 align-items-center">
-                                            <div class="col-auto"><?= renderImg("adam.png", "icons") ?></div>
+                                            <div class="col-auto"><div class="icon bg-pink text-dark">A</div></div>
                                             <div class="col-auto">
                                                 <div class="text-white fs-13 fw-700">Adam Spitzer</div>
                                                 <?= renderImg("testimonial-stars.png", "icons") ?>
@@ -248,13 +242,13 @@ include __DIR__ . '/header.php';
 <section class="bg-primary sticky-contact">
     <div class="container">
         <div class="row justify-content-around">
-            <div class="col-auto py-4 py-md-5">
+            <div class="col-auto py-4 py-md-4">
                 <a href="tel:<?= $phone_number ?>" class="text-white line-height-1 p-0 fs-13 fw-700"><?= $phone_number ?></a>
             </div>
-            <div class="col-auto py-4 py-md-5">
+            <div class="col-auto py-4 py-md-4">
                 <a href="#form" class="text-white line-height-1 p-0 fs-13 fw-700">Get A Free Quote</a>
             </div>
-            <div class="col-auto py-4 py-md-5">
+            <div class="col-auto py-4 py-md-4">
                 <a href="#form" class="text-white line-height-1 p-0 fs-13 fw-700">Book Online</a>
             </div>
         </div>
@@ -269,10 +263,10 @@ include __DIR__ . '/header.php';
             $services = [
                 "Fence spray painting",
                 "Timber staining",
-                "Renovations / extensions",
+                "<span class='d-xxl-none'>Renovation / Extensions</span><span class='d-none d-xxl-block'>Renovations/extensions</span>",
                 "Pressure washing",
                 "$500.00",
-                "Minor rot repairss",
+                "Minor rot repairs",
                 "Period homes",
                 "Commercial & strata re-paints",
                 "Interior & exterior painting",
@@ -387,9 +381,9 @@ include __DIR__ . '/header.php';
         <div class="row justify-content-center pt-5">
             <div class="col-lg-7 col-xl-6">
                 <div class="row gy-2 gy-md-0 gx-3">
-                    <div class="col-md"><a href="#testimonials" class="btn w-100 btn-grey text-white fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-3 py-md-4 px-3">Call Now</a></div>
+                    <div class="col-md"><a href="tel:<?= $phone_number ?>" class="btn w-100 btn-grey text-white fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-3 py-md-4 px-3">Call Now</a></div>
                     <div class="col-md"><a href="#testimonials" class="btn w-100 btn-primary text-white fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-3 py-md-4 px-3">Get a Quote</a></div>
-                    <div class="col-md"><a href="#testimonials" class="btn w-100 btn-tertiary text-dark fw-700 border-0 rounded-0 letter-spacing-n02 fs-13 py-3 py-md-4 px-3">Book Online</a></div>
+                    <div class="col-md"><a href="#testimonials" class="btn w-100 btn-tertiary text-dark fw-800 border-0 rounded-0 letter-spacing-n02 fs-13 py-3 py-md-4 px-3">Book Online</a></div>
                 </div>
             </div>
         </div>

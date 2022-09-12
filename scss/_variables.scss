@@ -9,6 +9,9 @@ $light: #BAD2EA;
 $black: #000000;
 $white: #ffffff;
 $clear-light: #F1F5F8;
+$purple: #6374C3;
+$orange: #FF5722;
+$pink: #FFCDD2;
 
 $theme-colors: (
     ) !default;
@@ -23,6 +26,9 @@ $theme-colors: map-merge(("primary": $primary,
             "clear-light": $clear-light,
             "black": $black,
             "white": $white,
+            "purple": $purple,
+            "orange": $orange,
+            "pink": $pink,
         ),
         $theme-colors
 );

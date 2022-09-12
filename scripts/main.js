@@ -10,18 +10,10 @@ document.querySelectorAll('a[href="#form"], a[href="#testimonials"]').forEach(fu
     });
 });
 
-let date = new Date();
-let hr = date.getHours();
-let mins = date.getMinutes();
-let meridian;
-let currentTime;
+let now = new Date();
+let time = now.toLocaleTimeString("en-US", {hour: '2-digit', minute: '2-digit', timeZone: "Australia/Melbourne"});
 
-meridian = (hr > 11) ? "PM" : "AM";
-hr = (hr > 12) ? (hr - 12) : hr;
-mins = (mins < 10) ? ("0" + mins) : mins;
-currentTime = hr + ":" + mins + " " + meridian;
-
-$(".current-time").html(currentTime);
+$(".current-time").html(time);
 
 $(window).on('scroll', () => {
     if ($(this).scrollTop() >= 600) {

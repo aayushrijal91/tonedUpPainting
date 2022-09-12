@@ -2,7 +2,7 @@
 include __DIR__ . '/env.php';
 
 $site = "Toned Up Painting";
-$phone_number = "0499 826 894";
+$phone_number = "1300 510 264";
 $admin_email = 'arijal@aiims.com.au';
 $bcc_email = "";
 $no_reply_email = 'info@website.com.au';
