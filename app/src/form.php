@@ -20,12 +20,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
         $phone = $_POST['phone'];
         $email = $_POST['email'];
         $service = $_POST['service'];
+        $comment = $_POST['comment'];
 
-        $message = '<!DOCTYPE html><html><body>' .
-            'Name: <strong>' . strip_tags($name) .  '</strong><br>' .
-            'Phone: <strong>' . strip_tags($phone) . '</strong><br>' .
-            'Email Address: <strong>' . strip_tags($email) . '</strong><br>' .
-            'Service: <strong>' . strip_tags($service) . '</strong>';
+        $message = '<!DOCTYPE html>
+                <html>
+                    <head>
+                        <style>
+                            table {
+                                font-family: arial, sans-serif;
+                                border-collapse: collapse;
+                                width: 100%;
+                            }
+                            
+                            td, th {
+                                border: 1px solid #dddddd;
+                                text-align: left;
+                                padding: 8px;
+                            }
+                            
+                            tr:nth-child(even) {
+                                background-color: #dddddd;
+                            }
+                        </style>
+                    </head>
+                <body><table><tbody>' .
+            '<tr>' .
+            '<td>Name</td>' .
+            '<td><b>' . strip_tags($name) .  '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Phone</td>' .
+            '<td><b>' . strip_tags($phone) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Email Address</td>' .
+            '<td><b>' . strip_tags($email) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Service</td>' .
+            '<td><b>' . strip_tags($service) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Service Required</td>' .
+            '<td><b>' . strip_tags($comment) . '</b></td>' .
+            '</tr>' .
+            '</tbody></table></body></html>';
 
         $semi_rand = md5(time());
         $mime_boundary = "==Multipart_Boundary_x{$semi_rand}x";
@@ -73,7 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
                 throw new Exception('Upload failed. Allowed file types: ' . implode(',', $allowedFileExtensions));
             }
         }
-        
+
         if ((isset($_FILES['uploadedFile']) && $_FILES['uploadedFile']['error'] === UPLOAD_ERR_OK)) {
             uploadFile($_FILES['uploadedFile']);
             $messagea .= "--{$mime_boundary}--";

@@ -86,8 +86,8 @@ include __DIR__ . '/header.php';
                 <div class="letter-spacing-n2 text-dark fw-800 fs-6 letter-spacing-n02">Book in your FREE Quote</div>
                 <form action="./src/form" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse">
-                    <div class="row no-gutters justify-content-lg-between">
-                        <div class="col-12 col-md-6 pr-md-1 pr-lg-2">
+                    <div class="row justify-content-lg-between">
+                        <div class="col-12 col-md-6">
                             <div class="form-group">
                                 <label for="name">Your Name</label>
                                 <div class="input-group">
@@ -95,7 +95,7 @@ include __DIR__ . '/header.php';
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 pl-md-1 pl-lg-2">
+                        <div class="col-12 col-md-6">
                             <div class="form-group">
                                 <label for="phone">Phone Number</label>
                                 <div class="input-group">
@@ -103,7 +103,7 @@ include __DIR__ . '/header.php';
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 col-md-6">
                             <div class="form-group">
                                 <label for="email">Email Address</label>
                                 <div class="input-group">
@@ -111,7 +111,7 @@ include __DIR__ . '/header.php';
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 col-md-6">
                             <div class="form-group">
                                 <label for="service">Your Painting Need</label>
                                 <div class="input-group">
@@ -126,6 +126,14 @@ include __DIR__ . '/header.php';
                                         <option>Commercial & strata re-paints</option>
                                         <option>Interior & exterior painting</option>
                                     </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="comment">Can you explain us the job/service you require?</label>
+                                <div class="input-group">
+                                    <textarea class="form-control bg-white rounded-0" rows="3" id="comment" name="comment"></textarea>
                                 </div>
                             </div>
                         </div>
